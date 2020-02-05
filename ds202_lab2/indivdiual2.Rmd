@@ -1,0 +1,31 @@
+---
+title: "individual2"
+author: "Syed Hasan GitHub:shasan215"
+date: "2/5/2020"
+output: html_document
+--- 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+sum(is.na(choco)) helped us to find mising values, we didn't find any.
+
+**Question 1 Individual**
+
+hist(choco$Rating) showed us that most chocolates are in 2 to 4 range with some outliers in 4.5 to 5 rated category
+
+![RatingHistogram](/Users/syedhamid/Downloads/lab2 ds202/Rplot.png)
+
+![Cocoa percentage vs Rating plot](/Users/syedhamid/Downloads/lab2 ds202/Rplot02.png)
+
+**Question 2 Individual**
+
+summary(choco$Cocoa.Pct)
+
+  Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   42.0    70.0    70.0    71.7    75.0   100.0 
+
+The dot plot shows us that most chocolates cocoa percent is between 70%~75%, with some outliers at 100% which were rated very low.
+
+Notable rating of 5 was only give to one choclate with cocoa percent of 70%. Telling us the sweet spot for dark chocolate is around 70%~71.7% shown by summary() command.
+
