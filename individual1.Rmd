@@ -1,0 +1,26 @@
+---
+title: "individual"
+author: "Tyler Smith"
+date: "February 5, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+choco <- read.csv("https://xdaiisu.github.io/ds202materials/hwlabs/choco.csv")
+hist(choco$Rating)
+```
+# Lab 2
+### Problem 1
+The distribution of the ratings are between 1 and 4, with a majority of ratings bettween 2.5 and 3.5. There do appear to be a couple of outliers with a rating between 1 and 1.5.
+
+
+```{r}
+plot(choco$Cocoa.Pct,choco$Rating)
+```
+
+### Problem 2
+From the scatterplot above, there does not appear to be a trend bewteen cacao percent and rating, so ratings are not dependent on the cacao percent.
