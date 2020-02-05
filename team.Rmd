@@ -1,6 +1,7 @@
 ---
 title: "team"
 output: html_document
+team Member: Syed Hasan and Tyler Smith
 ---
 
 ```{r setup, include=FALSE}
